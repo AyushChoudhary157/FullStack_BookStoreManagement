@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .welcome-box {
+            background-color: white;
+            padding: 30px 50px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        .username {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-box">
+        <h3>Welcome, <span class="username" th:text="${modelName}">User</span>!</h3>
+    </div>
+</body>
+</html>
